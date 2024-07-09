@@ -2,5 +2,5 @@
 *.jsx linguist-language=JavaScript
 *.ts linguist-language=TypeScript
 *.tsx linguist-language=TypeScript
-/app/* linguist-language=TypeScript
-/app/components/* linguist-language=TypeScript
+/app/* linguist-language=JavaScript
+/app/components/* linguist-language=JavaScript
