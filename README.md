@@ -1,7 +1,8 @@
-Design de Sobrancelhas - Sua Beleza Realçada
+Design de Sobrancelhas - Web Site
 ============================================
 
 ![Desktop](./public/rd-images/desktop.gif)
+![Mobile](./public/rd-images/mobile.gif)
 
 Este é um projeto de um site de design de sobrancelhas, desenvolvido com Next.js. O objetivo é proporcionar uma aparência perfeita e natural para os clientes, destacando sua beleza.
 
