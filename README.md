@@ -89,3 +89,5 @@ Este projeto está licenciado sob a MIT License.
 * * * * *
 
 Sinta-se à vontade para personalizar esse README conforme necessário para atender às especificidades do seu projeto.
+
+<!-- GitHub Linguist: language=JavaScript -->
