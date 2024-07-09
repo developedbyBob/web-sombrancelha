@@ -46,15 +46,11 @@ Para instalar e rodar o projeto localmente, siga os passos abaixo:
 
 1.  **Instale as dependências:**
 
-`npm install
-# ou
-yarn install`
+`npm install`
 
 1.  **Inicie o servidor de desenvolvimento:**
 
-`npm run dev
-# ou
-yarn dev`
+`npm run dev`
 
 O projeto estará disponível em `http://localhost:3000`.
 
