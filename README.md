@@ -1,93 +1,119 @@
-Design de Sobrancelhas - Web Site
-============================================
+# Design de Sobrancelhas - Website Profissional
 
-![Desktop](./public/rd-images/desktop.gif)
-![Mobile](./public/rd-images/mobile.gif)
+## Visão Geral
 
-Este é um projeto de um site de design de sobrancelhas, desenvolvido com Next.js. O objetivo é proporcionar uma aparência perfeita e natural para os clientes, destacando sua beleza.
+Site profissional para Giselle Silva, designer de sobrancelhas especializada, desenvolvido com Next.js e Tailwind CSS.
 
-Sumário
--------
+**Site ao vivo:** [https://web-sombrancelha.vercel.app/](https://web-sombrancelha.vercel.app/)
 
--   [Sobre](#sobre)
--   [Tecnologias Utilizadas](#tecnologias-utilizadas)
--   [Instalação](#instala%C3%A7%C3%A3o)
--   [Uso](#uso)
--   [Funcionalidades](#funcionalidades)
--   [Contribuição](#contribui%C3%A7%C3%A3o)
--   [Licença](#licen%C3%A7a)
--   [Contato](#contato)
+## Sobre o Projeto
 
-Sobre
------
+Este é um site moderno e responsivo criado para uma designer de sobrancelhas. O objetivo do projeto é oferecer uma presença online profissional que apresente os serviços oferecidos, demonstre o portfolio de trabalhos e facilite o agendamento de consultas.
 
-Este projeto é uma aplicação web desenvolvida para um designer de sobrancelhas. O site permite que os clientes conheçam os serviços oferecidos, vejam depoimentos, conheçam o portfólio, tirem dúvidas frequentes e entrem em contato para agendar um horário.
+## Características
 
-Tecnologias Utilizadas
-----------------------
+- **Design Moderno**: Interface contemporânea com animações suaves e elementos visuais atrativos
+- **Layout Responsivo**: Experiência otimizada em dispositivos móveis, tablets e desktops
+- **Navegação Intuitiva**: Estrutura clara que facilita o acesso às informações
+- **Formulário de Agendamento**: Sistema interativo para marcação de horários
+- **Integração com WhatsApp**: Comunicação direta via WhatsApp para confirmação de agendamentos
+- **Galeria de Trabalhos**: Demonstração visual dos resultados com exemplos de antes e depois
+- **Seção de Depoimentos**: Feedback de clientes para construção de credibilidade
+- **FAQ Interativo**: Perguntas frequentes com respostas expansíveis
+- **Otimização SEO**: Estrutura semântica para melhor indexação nos motores de busca
 
--   [Next.js](https://nextjs.org/) - Framework React para renderização do lado do servidor.
--   [React](https://reactjs.org/) - Biblioteca JavaScript para construir interfaces de usuário.
--   [Tailwind CSS](https://tailwindcss.com/) - Framework CSS para estilização.
--   [Vercel](https://vercel.com/) - Plataforma de hospedagem para aplicativos front-end.
+## Tecnologias Utilizadas
 
-Instalação
-----------
+- [Next.js](https://nextjs.org/) - Framework React para renderização híbrida (SSR/CSR)
+- [React](https://reactjs.org/) - Biblioteca JavaScript para interfaces de usuário
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS utilitário para estilização rápida
+- [React DatePicker](https://reactdatepicker.com/) - Componente para seleção de datas no agendamento
+- [date-fns](https://date-fns.org/) - Biblioteca para manipulação de datas
+- [Vercel](https://vercel.com/) - Plataforma para hospedagem e deployment
 
-Para instalar e rodar o projeto localmente, siga os passos abaixo:
+## Instalação e Uso
 
-1.  **Clone o repositório:**
+### Pré-requisitos
 
-`https://github.com/developedbyBob/web-sombrancelha.git`
+- Node.js (versão 16 ou superior)
+- npm ou yarn
 
-1.  **Navegue até o diretório do projeto:**
+### Instalação
 
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/web-sombrancelha.git
+   cd web-sombrancelha
+   ```
 
-`cd nome-do-projeto`
+2. Instale as dependências:
+   ```bash
+   npm install
+   # ou
+   yarn install
+   ```
 
-1.  **Instale as dependências:**
+3. Execute o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   # ou
+   yarn dev
+   ```
 
-`npm install`
+4. Abra [http://localhost:3000](http://localhost:3000) no seu navegador para ver o resultado.
 
-1.  **Inicie o servidor de desenvolvimento:**
+### Build para Produção
 
-`npm run dev`
+```bash
+npm run build
+# ou
+yarn build
+```
 
-O projeto estará disponível em `http://localhost:3000`.
+## Estrutura do Projeto
 
-Uso
+```
+web-sombrancelha/
+├── app/                    # Diretório principal da aplicação
+│   ├── components/         # Componentes React reutilizáveis
+│   ├── globals.css         # Estilos globais da aplicação
+│   ├── layout.js           # Layout principal
+│   ├── page.js             # Página inicial
+│   ├── privacidade/        # Página de política de privacidade
+│   └── termos/             # Página de termos de serviço
+├── public/                 # Arquivos estáticos (imagens, etc.)
+├── .eslintrc.json          # Configurações do ESLint
+├── next.config.mjs         # Configurações do Next.js
+├── package.json            # Dependências e scripts
+├── postcss.config.js       # Configurações do PostCSS
+└── tailwind.config.js      # Configurações do Tailwind CSS
+```
+
+## Implantação
+
+O projeto está implantado na Vercel, que oferece:
+- Implantação contínua a partir do GitHub
+- Certificados SSL automáticos
+- CDN global para entrega rápida
+- Monitoramento de performance
+
+## Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/amazing-feature`)
+3. Commit suas mudanças (`git commit -m 'Add some amazing feature'`)
+4. Push para a branch (`git push origin feature/amazing-feature`)
+5. Abra um Pull Request
+
+## Licença
+
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
+
+## Contato
+
+- Desenvolvedor: [Bob](https://github.com/developedbyBob)
+- Designer de Sobrancelhas: [Giselle Silva](https://www.instagram.com/giih_silv44/)
+
 ---
 
--   Navegue até a URL `http://localhost:3000` no seu navegador.
--   Explore as diferentes seções do site: Sobre, Serviços, Depoimentos, Portfólio, FAQ e Contato.
--   Use os links rápidos no rodapé para acessar os Termos de Serviço e a Política de Privacidade.
-
-Funcionalidades
----------------
-
--   **Navegação Simples**: Use a barra de navegação para acessar diferentes seções do site.
--   **Design Responsivo**: O site é responsivo e funciona bem em dispositivos móveis e desktops.
--   **Agendamento**: Possibilidade de entrar em contato para agendar um horário.
--   **Termos de Serviço e Política de Privacidade**: Links rápidos para acessar informações importantes.
-
-Contribuição
-------------
-
-Contribuições são bem-vindas! Para contribuir, siga os passos abaixo:
-
-1.  Faça um fork do projeto.
-2.  Crie uma branch para sua feature ou correção (`git checkout -b feature/nova-feature`).
-3.  Commit suas alterações (`git commit -m 'Adiciona nova feature'`).
-4.  Envie para a branch (`git push origin feature/nova-feature`).
-5.  Abra um Pull Request.
-
-Licença
--------
-
-Este projeto está licenciado sob a MIT License.
-
-* * * * *
-
-Sinta-se à vontade para personalizar esse README conforme necessário para atender às especificidades do seu projeto.
-
-<!-- GitHub Linguist: language=JavaScript -->
+Projeto desenvolvido com ❤️ para proporcionar uma presença online de qualidade para profissionais da beleza.
