@@ -5,17 +5,43 @@ import Testimonials from './components/Testimonials'
 import Portfolio from './components/Portfolio'
 import FAQ from './components/FAQ'
 import Contact from './components/Contact'
+import ScrollAnimation from './components/ScrollAnimation'
 
 export default function Home() {
   return (
-    <main>
+    <>
+      {/* Hero Section */}
       <HeroSection />
-      <About />
-      <Services />
-      <Testimonials />
-      <Portfolio />
-      <FAQ />
-      <Contact />
-    </main>
+      
+      {/* Sobre */}
+      <ScrollAnimation>
+        <About />
+      </ScrollAnimation>
+      
+      {/* Serviços */}
+      <ScrollAnimation>
+        <Services />
+      </ScrollAnimation>
+      
+      {/* Portfolio (Antes e Depois) */}
+      <ScrollAnimation>
+        <Portfolio />
+      </ScrollAnimation>
+      
+      {/* Depoimentos */}
+      <ScrollAnimation>
+        <Testimonials />
+      </ScrollAnimation>
+      
+      {/* FAQ */}
+      <ScrollAnimation>
+        <FAQ />
+      </ScrollAnimation>
+      
+      {/* Contato */}
+      <ScrollAnimation>
+        <Contact />
+      </ScrollAnimation>
+    </>
   )
 }

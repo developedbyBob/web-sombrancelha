@@ -2,33 +2,100 @@
 @tailwind components;
 @tailwind utilities;
 
-
+/* Variáveis */
 :root {
-  --color-primary: #FFC0CB;
-  --color-secondary: #FFE4E1;
-  --color-text: #4A4A4A;
-  --color-background: #FFF5EE;
+  --color-primary: #ec4899;
+  --color-primary-light: #f9a8d4;
+  --color-secondary: #fdf2f8;
+  --color-text: #374151;
+  --color-text-light: #6b7280;
+  --color-background: #ffffff;
+  --font-primary: 'Montserrat', sans-serif;
 }
 
+/* Estilos Globais */
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* Ajusta para o tamanho da navbar */
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-text);
-  font-family: 'Helvetica', 'Arial', sans-serif;
-  padding-top: 64px; 
-  width: 90%;
+  font-family: var(--font-primary);
+  padding-top: 0; /* Removido porque a navbar já tem position fixed */
+  width: 100%; /* Ocupar a largura total */
+  margin: 0;
+  overflow-x: hidden; /* Prevenir barra de rolagem horizontal */
+}
+
+/* Container personalizado para conteúdo */
+.navbar-container, 
+.container {
+  width: 92%;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
-.navbar-container {
-  width: 92.5%; /* Ajuste para a largura desejada */
-  margin: 0 auto;
-}
-
-
+/* Botões */
 .btn-primary {
-  @apply bg-pink-300 text-white px-6 py-2 rounded-full hover:bg-pink-400 transition duration-300;
+  @apply bg-gradient-to-r from-pink-400 to-pink-600 text-white px-6 py-3 rounded-full 
+  hover:shadow-lg transition duration-300 transform hover:-translate-y-1;
+}
+
+.btn-secondary {
+  @apply border border-pink-300 text-pink-600 px-6 py-3 rounded-full 
+  hover:bg-pink-50 transition duration-300;
+}
+
+/* Títulos de seção */
+.section-title {
+  @apply text-3xl md:text-4xl font-light mb-12 text-center relative;
+  color: var(--color-primary);
+}
+
+.section-title::after {
+  content: '';
+  @apply absolute w-16 h-1 bg-pink-300 rounded-full left-1/2 -translate-x-1/2 -bottom-4;
+}
+
+/* Transições suaves */
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* Cards e elementos com efeito de hover */
+.hover-card {
+  @apply bg-white rounded-xl shadow-sm p-6 transition-all duration-300 hover:shadow-md;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Estilos para transições suaves */
+.transition-transform {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+/* ScrollBar personalizado */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fdf2f8;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f9a8d4;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
 }
